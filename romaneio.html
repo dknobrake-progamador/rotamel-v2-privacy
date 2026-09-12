@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de Privacidade do aplicativo ROMANEIO: dados de conta, documentos, endereços, mapas e solicitações de exclusão.">
+  <title>Política de Privacidade — ROMANEIO</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f7fa; color: #203047; font: 17px/1.7 system-ui, sans-serif; }
+    main { max-width: 860px; margin: 32px auto; padding: clamp(20px, 5vw, 52px); background: white; border: 1px solid #dfe5ec; border-radius: 14px; }
+    h1 { font-size: clamp(27px, 5vw, 40px); line-height: 1.2; }
+    h2 { font-size: 22px; line-height: 1.35; margin-top: 32px; }
+    a { color: #075eab; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid #d78b00; outline-offset: 3px; }
+    .meta { color: #506176; }
+    .notice { padding: 16px 20px; background: #edf5ff; border-left: 4px solid #075eab; }
+    li { margin: 9px 0; }
+    footer { border-top: 1px solid #dfe5ec; margin-top: 36px; padding-top: 18px; }
+    @media (max-width: 600px) { main { margin: 0; border: 0; border-radius: 0; } }
+    @media print { body { background: white; } main { margin: 0; border: 0; max-width: none; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="meta">ROMANEIO · Aplicativo Android · com.romaneio</p>
+    <h1>Política de Privacidade</h1>
+    <p class="meta">Última atualização: 12 de setembro de 2026.</p>
+  </header>
+  <p>Esta política explica o tratamento de dados no ROMANEIO, aplicativo destinado à leitura de romaneios, organização de rotas, geração de documentos e visualização de endereços em mapas.</p>
+  <p>O responsável pelo aplicativo é Douglas Gabriel. Para assuntos de privacidade e solicitações relacionadas aos seus dados, entre em contato pelo e-mail <a href="mailto:dgnobrake@gmail.com">dgnobrake@gmail.com</a>.</p>
+
+  <h2>1. Dados utilizados pelo aplicativo</h2>
+  <ul>
+    <li><strong>Conta e acesso:</strong> e-mail, identificador de usuário, informações de autenticação, situação de liberação de acesso, perfil de usuário ou administrador e registros de solicitações e alterações de acesso. A senha informada no cadastro ou login é encaminhada ao serviço Firebase Authentication para autenticação.</li>
+    <li><strong>Documentos selecionados:</strong> conteúdo dos arquivos PDF e planilhas que você abre ou compartilha com o ROMANEIO. Eles podem conter endereços de entrega, cidades, bairros, identificadores de rota, sequências de parada e outros dados presentes no documento, inclusive dados de terceiros.</li>
+    <li><strong>Dados de mapas:</strong> endereços consultados, coordenadas geográficas, cidade, bairro e descrições dos locais, necessários para posicionar pontos no mapa.</li>
+    <li><strong>Dados locais e técnicos:</strong> sessão de acesso, preferências, arquivos gerados, dados temporários, versão do aplicativo e registros de funcionamento. Os serviços externos utilizados também recebem informações técnicas necessárias à conexão, como o endereço IP.</li>
+  </ul>
+  <p>A versão analisada utiliza a localização dos endereços contidos nos documentos; não solicita permissão de GPS para acompanhar continuamente a posição do aparelho.</p>
+
+  <h2>2. Finalidades</h2>
+  <p>Os dados são utilizados para autenticar usuários, administrar o acesso, interpretar documentos, organizar rotas, gerar e compartilhar PDFs, localizar endereços, exibir mapas, reaproveitar resultados de geocodificação e verificar a disponibilidade de atualizações. Informações técnicas auxiliam no diagnóstico de falhas e na operação do aplicativo.</p>
+
+  <h2>3. Processamento de documentos e OCR</h2>
+  <p>O ROMANEIO tenta interpretar os documentos no aparelho. Quando a leitura local de um PDF não produz um resultado adequado, o aplicativo pode encaminhar o PDF completo ao serviço externo OCR.space para reconhecimento de texto. Nesse caso, o conteúdo enviado pode incluir todos os dados pessoais existentes no arquivo.</p>
+  <p>Abra somente documentos que você esteja autorizado a tratar. Evite incluir informações pessoais que não sejam necessárias à finalidade de organização das entregas.</p>
+
+  <h2>4. Cache compartilhado de endereços</h2>
+  <div class="notice">
+    <p>Para acelerar a abertura dos mapas, o aplicativo mantém uma base compartilhada no Cloud Firestore com endereços processados, cidade, bairro, coordenadas, descrições de localização e data de atualização. Esses resultados podem ser reutilizados em consultas feitas por outros usuários do ROMANEIO.</p>
+  </div>
+  <p>Essa base não se limita ao armazenamento local do seu aparelho. A rotina de cache não adiciona o e-mail da conta ao registro do endereço, mas o próprio endereço e suas coordenadas podem identificar um local relacionado a uma pessoa. Por esse motivo, esses registros não são apresentados como dados necessariamente anônimos.</p>
+
+  <h2>5. Serviços externos e compartilhamento</h2>
+  <ul>
+    <li><strong>Google Firebase Authentication e Cloud Firestore:</strong> autenticação, controle de acesso, configurações de versão e armazenamento compartilhado de resultados de geocodificação.</li>
+    <li><strong>Google Maps:</strong> carregamento e exibição dos mapas e informações técnicas necessárias a esse serviço.</li>
+    <li><strong>Geoapify e Nominatim/OpenStreetMap:</strong> consulta de endereços e obtenção de coordenadas e informações de localização.</li>
+    <li><strong>OCR.space:</strong> reconhecimento de texto de PDFs quando acionado o processamento externo descrito acima.</li>
+    <li><strong>Google Play:</strong> distribuição do aplicativo e verificação de atualizações disponíveis.</li>
+    <li><strong>Aplicativos escolhidos por você:</strong> ao compartilhar um arquivo ou abrir um serviço externo, os dados encaminhados passam a ser tratados também pelo aplicativo de destino.</li>
+  </ul>
+  <p>Os prestadores podem processar informações em servidores situados fora do Brasil. O tratamento realizado por eles também está sujeito aos respectivos termos e políticas. Links externos, incluindo o aplicativo Rota Mel, possuem práticas próprias de privacidade.</p>
+  <p>Consulte as informações dos prestadores: <a href="https://policies.google.com/privacy">Google</a>, <a href="https://firebase.google.com/support/privacy">Firebase</a>, <a href="https://www.geoapify.com/privacy-policy/">Geoapify</a>, <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation</a> e <a href="https://ocr.space/privacypolicy">OCR.space</a>.</p>
+
+  <h2>6. Permissões e armazenamento no aparelho</h2>
+  <p>O aplicativo utiliza acesso à internet para autenticação, mapas, consultas e serviços em nuvem. Conforme a versão do Android e a operação escolhida, pode utilizar acesso a arquivos para importar documentos ou salvar resultados. A configuração Android também declara permissões de vibração e sobreposição de tela, relacionadas à apresentação e aos avisos da interface.</p>
+  <p>Você pode gerenciar permissões nas configurações do Android. A retirada de uma permissão pode limitar a função correspondente. Cópias exportadas para outras pastas, aplicativos ou serviços permanecem nesses destinos até serem removidas por você ou pelo respectivo responsável.</p>
+
+  <h2>7. Conservação e exclusão dos dados</h2>
+  <p>Dados de conta e acesso são mantidos para disponibilizar e administrar o serviço. O cache compartilhado é persistente e a versão atual não implementa um prazo automático de expiração para seus registros. Dados locais e arquivos podem permanecer no aparelho até a limpeza dos dados do aplicativo ou sua remoção, observadas as cópias exportadas e os mecanismos de backup do Android.</p>
+  <p>Desinstalar o aplicativo ou sair da conta não elimina automaticamente registros existentes na nuvem. Você pode solicitar a exclusão da conta, dos registros de acesso e de dados pessoais presentes no cache pelo procedimento a seguir. Retenções necessárias ao cumprimento de obrigações legais ou à proteção de direitos serão informadas quando aplicáveis. O armazenamento efetuado pelos prestadores externos também segue suas próprias políticas.</p>
+
+  <h2 id="exclusao">8. Solicitação de exclusão de conta e dados</h2>
+  <p>Envie um e-mail para <a href="mailto:dgnobrake@gmail.com?subject=ROMANEIO%20-%20Exclus%C3%A3o%20de%20conta%20e%20dados">dgnobrake@gmail.com</a> com o assunto <strong>ROMANEIO — Exclusão de conta e dados</strong>. Informe o e-mail da conta e se deseja excluir a conta inteira ou dados específicos. Para dados de um endereço, identifique o registro necessário à localização da informação, evitando enviar documentos completos sem necessidade.</p>
+  <p>O responsável poderá solicitar informações proporcionais para confirmar sua identidade e impedir a exclusão indevida de dados de terceiros. Não envie senhas. O pedido será analisado e você receberá orientações sobre a conclusão, os dados abrangidos e eventuais retenções justificadas.</p>
+  <p>Esse canal também atende solicitações de acesso, correção e esclarecimentos sobre seus dados pessoais. A exclusão de registros compartilhados pode exigir a identificação dos endereços envolvidos, pois o cache não mantém uma associação direta com o e-mail da conta.</p>
+
+  <h2>9. Segurança</h2>
+  <p>O aplicativo utiliza conexões HTTPS com os serviços externos descritos e autenticação por Firebase. O acesso aos dados em nuvem depende das configurações e regras de acesso do projeto. Nenhum mecanismo elimina todos os riscos; proteja sua conta, seu aparelho e os arquivos de romaneio que você exportar.</p>
+
+  <h2>10. Público e alterações desta política</h2>
+  <p>O ROMANEIO é destinado a pessoas com 18 anos ou mais e não é direcionado a crianças. Caso você identifique dados de uma criança tratados indevidamente, utilize o contato de privacidade.</p>
+  <p>Esta política poderá ser atualizada para refletir mudanças nas funções ou no tratamento de dados. A versão vigente será identificada pela data no início desta página. Mudanças que exijam informação adicional ou consentimento deverão ser apresentadas ao usuário pelo meio adequado.</p>
+  <footer><p><strong>Contato de privacidade do ROMANEIO</strong><br>Douglas Gabriel · <a href="mailto:dgnobrake@gmail.com">dgnobrake@gmail.com</a></p></footer>
+</main>
+</body>
+</html>
